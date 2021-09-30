@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AnimeMangaRanking</title>
+    <title>【投票制】アニメ・マンガランキング</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,20 @@
   </head>
 
   <body>
+
+  <div id="nav">
+    <% if current_user %>
+      <%= link_to 'ユーザー編集', edit_user_path(current_user.id) %>
+      <%= link_to 'ログアウト', :logout, method: :post %>
+    <% else %>
+      <%= link_to 'ユーザー登録', new_user_path %> |
+      <%= link_to 'ログイン', :login %>
+    <% end %>
+  </div>
+  <div>
+    <p id="notice"><%= flash[:notice] %></p>
+  </div>
     <%= yield %>
+
   </body>
 </html>
