@@ -1,8 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h1>ユーザー詳細</h1>
+      <br>
+      <p>ユーザーネーム</p>
+      <%= @user.name %>
 
-<p>
-  <strong>ユーザーネーム:</strong>
-  <%= @user.name %>
-</p>
-
-<%= link_to '編集', edit_user_path(@user) %> |
-<%= link_to '戻る', users_path %>
+      <div class='text-center'>
+        <%= link_to '編集', edit_user_path(@user) %> |
+        <%= link_to '戻る', users_path %>
+      </div>
+    </div>
+  </div>
+</div>
