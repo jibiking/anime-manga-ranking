@@ -1,0 +1,6 @@
+ja:
+  user:
+    new:
+      name: 'ユーザーネーム'
+      password: 'パスワード'
+      password_confirmation: 'パスワード確認'

@@ -35,8 +35,8 @@ gem 'sorcery'
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 
-# font-awesome追加
-gem 'font-awesome-sass'
+# 日本語化
+gem 'rails-i18n'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
