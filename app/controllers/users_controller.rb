@@ -25,7 +25,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to(:users, notice: 'ユーザーを作成しました。')
+      redirect_to(:users, success: 'ユーザーを作成しました。')
     else
       flash.now[:danger] = 'ユーザーを作成できませんでした。'
       render action: 'new'
@@ -49,7 +49,7 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_url, notice: "ユーザーを削除しました。" }
+      format.html { redirect_to users_url, success: "ユーザーを削除しました。" }
       format.json { head :no_content }
     end
   end

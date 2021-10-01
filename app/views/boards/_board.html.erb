@@ -1,0 +1,22 @@
+<div class="col-sm-12 col-lg-4 mb-3">
+  <div id="board-id-1">
+    <div class="card"><img class="card-img-top" src="/assets/board_placeholder.png" width="300" height="200"/>
+      <div class="card-body">
+        <h4 class="card-title">
+          <%= link_to board_path(board) do %>
+            <%= board.title %>
+          <% end %>
+        </h4>
+        <p class="card-text"><%= board.body %></p>
+        <div class='mr10 float-right'>
+          <%= link_to edit_board_path(board), id: 'button-edit-#{board.id}' do %>
+            <i class="fas fa-pen"></i>
+          <% end %>
+          <%= link_to board_path(board), id: 'button-delete-#{board.id}', method: :delete, data: {confirm: '作品を削除しますか？'} do %>
+            <i class="fas fa-trash"></i>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

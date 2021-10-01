@@ -20,7 +20,7 @@
     <% end %>
   </div>
   <div>
-    <p id="notice"><%= flash[:notice] %></p>
+    <%= render 'shared/flash_message' %>
   </div>
     <%= yield %>
 
