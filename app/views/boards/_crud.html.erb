@@ -1,0 +1,10 @@
+<% if current_user.id == board.user_id %>
+  <div class='mr10 float-right'>
+    <%= link_to edit_board_path(board), id: 'button-edit-#{board.id}' do %>
+      <i class="fas fa-pen"></i>
+    <% end %>
+    <%= link_to board_path(board), id: 'button-delete-#{board.id}', method: :delete, data: {confirm: '作品を削除しますか？'} do %>
+      <i class="fas fa-trash"></i>
+    <% end %>
+  </div>
+<% end %>
