@@ -1,6 +1,11 @@
 <div class="col-sm-12 col-lg-4 mb-3">
   <div id="board-id-1">
-    <div class="card"><img class="card-img-top" src="/assets/board_placeholder.png" width="300" height="200"/>
+    <div class="card">
+      <% if board.board_image.present? %>
+        <%= image_tag board.board_image.url %>
+      <% else %>
+        <%= image_tag '/assets/default.png' %>
+      <% end %>
       <div class="card-body">
         <h4 class="card-title">
           <%= link_to board_path(board) do %>

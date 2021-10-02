@@ -38,7 +38,11 @@ gem 'jquery-rails'
 # 日本語化
 gem 'rails-i18n'
 
+# デバック
 gem 'pry-rails'
+
+# 画像投稿
+gem 'carrierwave'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
