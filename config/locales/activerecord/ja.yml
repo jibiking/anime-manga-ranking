@@ -11,3 +11,5 @@ ja:
         title: 'タイトル'
         body: '作品詳細'
         board_image: '画像'
+      comment:
+        body: '感想をコメントで共有しよう！'

@@ -48,10 +48,7 @@ class UsersController < ApplicationController
   # DELETE /users/1 or /users/1.json
   def destroy
     @user.destroy
-    respond_to do |format|
-      format.html { redirect_to users_url, success: "ユーザーを削除しました。" }
-      format.json { head :no_content }
-    end
+    redirect_to users_path, success: 'ユーザーを削除しました！'
   end
 
   private

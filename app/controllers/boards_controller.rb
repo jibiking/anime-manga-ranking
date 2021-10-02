@@ -19,7 +19,11 @@ class BoardsController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @comment = current_user.comments.build
+    @comment.board_id = @board.id
+    @comments = Comment.all.order(created_at: 'DESC')
+  end
 
   def edit; end
 
