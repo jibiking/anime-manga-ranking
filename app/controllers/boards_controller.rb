@@ -22,7 +22,7 @@ class BoardsController < ApplicationController
   def show
     @comment = current_user.comments.build
     @comment.board_id = @board.id
-    @comments = Comment.all.order(created_at: 'DESC')
+    @comments = @board.comments.includes(:user).order(created_at: :desc)
   end
 
   def edit; end
@@ -37,7 +37,7 @@ class BoardsController < ApplicationController
   end
 
   def destroy
-    @board.destroy
+    @board.destroy!
     redirect_to boards_path, success: '作品を削除しました！'
   end
 

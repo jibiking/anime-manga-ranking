@@ -26,8 +26,6 @@
   <%= render 'comments/form' %>
 
   <!-- コメントエリア -->
-  <% @comments.each do |comment| %>
-    <%= render 'comments/comments', comment: comment %>
-  <% end %>
+  <%= render 'comments/comments', comments: @comments %>
 
 </div>

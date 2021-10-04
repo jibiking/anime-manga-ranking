@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   resources :users
   resources :boards do
     resources :comments, only: %i[create edit destroy], shallow: true
+    collection do
+      get 'likes'
+    end
   end
+  resources :likes, only: %i[create destroy]
 
   get 'login' => 'user_sessions#new', :as => :login
   post 'login' => 'user_sessions#create'

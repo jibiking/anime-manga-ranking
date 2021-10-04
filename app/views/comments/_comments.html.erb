@@ -1,33 +1,9 @@
-<% if @board.id == comment.board_id %>
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2">
-      <table id="js-table-comment" class="table">
-        <tr id="comment-25">
-          <td>
-            <h3 class="small"><%= comment.user.name %></h3>
-            <div id="js-comment-25">
-              <p><%= comment.body %></p>
-            </div>
-          </td>
+<div class="row">
+  <div class="col-lg-8 offset-lg-2">
+    <table id="js-table-comment" class="table">
 
-          <% if current_user.id == comment.user_id %>
-            <td class="action">
-              <ul class="list-inline justify-content-center" style="float: right;">
-                <li class="list-inline-item">
-                  <%= link_to edit_comment_path(comment), id: 'button-edit-#{comment.id}' do %>
-                    <i class="fas fa-pen"></i>
-                  <% end %>
-                </li>
-                <li class="list-inline-item">
-                  <%= link_to comment_path(comment), id: 'button-delete-#{comment.id}', method: :delete, data: {confirm: 'コメントを削除しますか？'} do %>
-                    <i class="fas fa-trash"></i>
-                  <% end %>
-                </li>
-              </ul>
-            </td>
-          <% end %>
-        </tr>
-      </table>
-    </div>
+    <%= render comments %>
+
+    </table>
   </div>
-<% end %>
+</div>

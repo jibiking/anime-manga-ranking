@@ -14,7 +14,11 @@
         </h4>
         <p class="card-text"><%= board.body %></p>
 
-        <%= render 'crud', board: board %>
+        <% if current_user.own?(board) %>
+          <%= render 'crud', board: board %>
+        <% else %>
+          <%= render 'likes/like_button', board: board %>
+        <% end %>
 
       </div>
     </div>

@@ -47,7 +47,7 @@ class UsersController < ApplicationController
 
   # DELETE /users/1 or /users/1.json
   def destroy
-    @user.destroy
+    @user.destroy!
     redirect_to users_path, success: 'ユーザーを削除しました！'
   end
 

@@ -1,0 +1,7 @@
+<% if current_user.like?(board) %>
+  <%# likeがあればlikeを削除する_unlikeへ %>
+  <%= render 'likes/unlike', board: board %>
+<% else %>
+  <%# likeがなければlikeを追加する_likeへ %>
+  <%= render 'likes/like', board: board %>
+<% end %>
