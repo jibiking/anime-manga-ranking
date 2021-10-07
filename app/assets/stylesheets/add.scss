@@ -1,0 +1,35 @@
+.trimming{
+  height: 292px;
+  max-width: 347px;
+  object-fit: cover;
+}
+
+.flex{
+  display: flex;
+}
+
+.center{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mr6{
+  margin-right: 6px;
+}
+
+.mb30{
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px){
+
+  .card__header_01 {
+    display: block;
+    // flex-wrap: wrap;
+  }
+
+  .mb30{
+    padding-bottom: 40px;
+  }
+
+}

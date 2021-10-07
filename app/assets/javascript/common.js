@@ -13,4 +13,4 @@ document.addEventListener("turbolinks:load", function() {
           readURL(this);
       });
     });
-  })
+  });

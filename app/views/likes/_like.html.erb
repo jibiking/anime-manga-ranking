@@ -1,5 +1,5 @@
-<div class="mr10 float-right">
+<div class="mr10">
   <%= link_to likes_path(board_id: board.id), method: :post, id: "js-like-button-for-board-#{board.id}", remote: true do %>
-    <i class="far fa-heart"></i>
+    <div class="btn btn-primary">投票する！</div>
   <% end %>
 </div>

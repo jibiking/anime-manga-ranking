@@ -13,6 +13,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "jquery"
 import "common.js"
+// import "board.js"
 
 import '@fortawesome/fontawesome-free/js/all';
 
