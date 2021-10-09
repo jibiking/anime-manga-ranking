@@ -5,7 +5,7 @@
       <!-- 作品内容 -->
       <%# ここに入れる %>
 
-<div class="l-wrapper_01">
+<div class="l-wrapper_01 show">
   <article class="card_01">
     <div class="card__header_01">
       <figure class="card__thumbnail_01">
@@ -22,6 +22,11 @@
         <div class="card__body_01">
           <p class="card__text2_01"><%= @board.body %></p>
         </div>
+        <div class="card__body_01">
+          <p><i class="fas fa-bookmark mr6"></i> 得票数：<%= Like.where(board_id: @board.id).count %></p>
+          <p><i class="fas fa-comment"></i> コメント数：<%= Comment.where(board_id: @board.id).count %></p>
+        </div>
+
       </div>
     </div>
 

@@ -10,7 +10,7 @@
     <td class="action">
       <ul class="list-inline justify-content-center" style="float: right;">
         <li class="list-inline-item">
-          <%= link_to comment_path(comment), class: 'js-delete-comment-button', method: :delete, data: {confirm: 'コメントを削除しますか？'}, remote: true do %>
+          <%= link_to comment_path(comment), class: 'js-delete-comment-button c_red-crud', method: :delete, data: {confirm: 'コメントを削除しますか？'}, remote: true do %>
             <i class="fas fa-trash"></i>
           <% end %>
         </li>

@@ -1,6 +1,15 @@
+
+// all
+*{
+  font-family: '游ゴシック';
+}
+
+
+// レイアウト
+
 .trimming{
   height: 292px;
-  max-width: 347px;
+  max-width: 206px;
   object-fit: cover;
 }
 
@@ -20,6 +29,112 @@
 .mb30{
   margin-bottom: 30px;
 }
+
+.btn{
+  font-size: 1.2rem;
+}
+
+.alert{
+  margin-bottom: 0;
+}
+
+
+// show
+.show{
+  margin-left: -3px;
+}
+.comment-btn{
+  font-size: 1rem;
+}
+
+// レイアウトここまで
+
+
+// フォント
+
+
+// フォントここまで
+
+
+
+// color
+// メイン
+.c_red{
+  color: #00ADB5;
+  text-decoration: underline;
+}
+.c_red:hover{
+  color: #02666b;
+  text-decoration: underline;
+}
+.c_red-crud{
+  color: #00ADB5;
+}
+.c_red-crud:hover{
+  color: #02666b;
+}
+.bc_red{
+  background-color: #00ADB5;
+  border-color: #00ADB5;
+}
+.bc_red:hover{
+  background-color: #fff;
+  border-color: #00ADB5;
+  color: #00ADB5;
+}
+.bc_red2{
+  background-color: #fff;
+  border-color: #00ADB5;
+  color: #00ADB5;
+}
+.bc_red2:hover{
+  background-color: #00ADB5;
+  border-color: #00ADB5;
+  color: #fff;
+}
+
+.bc_black{
+  background-color: #222831;
+}
+.c_white{
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.bc_pink{
+  background-color: #393E46!important;
+}
+
+.nav-item a{
+  color: #fff!important;
+  font-family: 'ヒラギノ角ゴシック';
+  font-size: 1.1rem;
+  margin-right: 3px;
+}
+.nav-item a:hover{
+  color: #00ADB5!important;
+}
+
+.c_title{
+  color: #fff;
+  padding-top: 5px;
+  font-size: 1.8rem;
+  font-family: 'ヒラギノ角ゴシック';
+}
+
+.bc_cream{
+  background-color: #EEEEEE;
+  min-height: 850px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+// colorここまで
+
+
+
+
+
 
 @media screen and (max-width: 767px){
 
