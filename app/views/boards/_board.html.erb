@@ -1,5 +1,10 @@
 <div class="l-wrapper_01">
   <article class="card_01">
+  <%# バッジ追加 %>
+  <div class="ribbon14-wrapper">
+    <span class="ribbon14"><span class="big"><%= @boards.index(board) + 1 %></span> <span class="small">位</span></span>
+  </div>
+  <%# バッジ追加ここまで %>
     <div class="card__header_01">
       <figure class="card__thumbnail_01">
         <% if board.board_image.present? %>

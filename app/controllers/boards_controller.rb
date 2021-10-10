@@ -27,6 +27,7 @@ class BoardsController < ApplicationController
     @comment.board_id = @board.id
     @comments = @board.comments.includes(:user).order(created_at: :desc)
 
+    @boards = Board.find(Like.group(:board_id).order('count(board_id) desc').pluck(:board_id))
     # like数カウント
     # @likes_count = Like.where(board_id: @board.id).count
   end
