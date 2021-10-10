@@ -25,7 +25,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to(:users, success: 'ユーザーを作成しました。')
+      redirect_to(:login, success: 'ユーザーを作成しました。')
     else
       flash.now[:danger] = 'ユーザーを作成できませんでした。'
       render action: 'new'

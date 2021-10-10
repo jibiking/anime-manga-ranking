@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class=" col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h1>【投票制】アニメ・マンガランキング</h1>
+
+      <p class="s_index s_p"><i class="fas fa-bookmark mr6"></i> お気に入りの作品を追加してランキングに投票しよう <i class="fas fa-bookmark mr6"></i></p>
+
+      <div class="s_index">
+        <%= link_to new_user_path, class: 's_a' do %>
+          <div class="btn btn-primary bc_red">ユーザー登録</div>
+        <% end %>
+        <%= link_to login_path do %>
+          <div class="btn btn-primary bc_red2">ログイン</div>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -4,7 +4,6 @@
   font-family: '游ゴシック';
 }
 
-
 // レイアウト
 
 .trimming{
@@ -47,7 +46,7 @@
 
 
 // show
-.comment-btn{
+.nomal-btn{
   font-size: 1rem;
 }
 
@@ -58,6 +57,22 @@
   font-size: 2.5rem;
   color: #FF2E63;
 }
+
+// start
+.s_index{
+  text-align: center;
+  margin-top: 60px;
+}
+.s_p{
+  font-size: 1.4rem;
+  text-decoration: underline;
+  font-weight: bold;
+  // text-decoration-color: #00ADB5;
+}
+.s_a{
+  margin-right: 10px;
+}
+
 
 // レイアウトここまで
 

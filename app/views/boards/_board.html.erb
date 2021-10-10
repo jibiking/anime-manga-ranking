@@ -10,7 +10,7 @@
         <% if board.board_image.present? %>
           <%= image_tag board.board_image.url, class: 'trimming' %>
         <% else %>
-          <%= image_tag '/assets/default.png', size: '300x200' %>
+          <%= image_tag '/assets/default.png', class: 'trimming' %>
         <% end %>
       </figure>
       <div class="mb30">
