@@ -296,7 +296,7 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4)
   rails-i18n
-  sass-rails (>= 6)
+  sass-rails
   selenium-webdriver
   sorcery
   spring
