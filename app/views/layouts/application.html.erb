@@ -23,7 +23,7 @@
   <div>
     <%= render 'shared/flash_message' %>
   </div>
-  <div class="bc_cream">
+  <div class="bc_cream <%= current_page?(root_path) %>">
     <%= yield %>
   </div>
 

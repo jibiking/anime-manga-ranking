@@ -6,6 +6,14 @@
 
 // レイアウト
 
+// root_path
+.true{
+  background-image: url(start.png);
+}
+.root_container{
+  margin-top: 100px;
+}
+
 .trimming{
   height: 292px;
   max-width: 206px;
@@ -150,6 +158,13 @@
   min-height: 850px;
   padding-top: 40px;
   padding-bottom: 20px;
+}
+
+.route_fff{
+  color: #fff;
+}
+.route_g{
+  color: #00ADB5;
 }
 
 // colorここまで
