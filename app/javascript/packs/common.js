@@ -9,7 +9,7 @@ document.addEventListener("turbolinks:load", function() {
           reader.readAsDataURL(input.files[0]);
           }
       }
-      $("#board_img").onChange(function(){
+      $("#board_img").change(function(){
           readURL(this);
       });
     });
