@@ -328,7 +328,19 @@
 
 
 
+@media screen and (max-width: 991px){
+  #nav-drawer{
+    display: block;
+    margin-top: 10px;
+  }
+  .nav-item{
+    margin-top: 30px;
+  }
+  .navbar-nav{
+    margin-top: 30px;
+  }
 
+}
 
 @media screen and (max-width: 767px){
 
@@ -359,14 +371,5 @@
     color: #00ADB5;
   }
 
-  #nav-drawer{
-    display: block;
-  }
-  .nav-item{
-    margin-top: 30px;
-  }
-  .navbar-nav{
-    margin-top: 30px;
-  }
 
 }

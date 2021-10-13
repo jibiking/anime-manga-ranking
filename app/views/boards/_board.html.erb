@@ -29,15 +29,19 @@
 
 
         <div class="card__body_01 center">
-          <%# ここに入れてみる %>
 
-          <% if current_user.own?(board) %>
-            <%= render 'crud', board: board %>
+        <%# ログインしていたら投票orCRUD %>
+        <%# していなかったらログインリンク %>
+          <% if logged_in? %>
+            <% if current_user.own?(board) %>
+              <%= render 'crud', board: board %>
+            <% else %>
+              <%= render 'likes/like_button', board: board %>
+            <% end %>
           <% else %>
-            <%= render 'likes/like_button', board: board %>
+            <%= link_to 'ログインして投票する！', login_path, class: 'c_red-crud' %>
           <% end %>
 
-          <%# ここに入れてみる %>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 class BoardsController < ApplicationController
+  skip_before_action :require_login, only: %i[index]
   before_action :set_board, only: %i[ show edit update destroy ]
 
   def index
