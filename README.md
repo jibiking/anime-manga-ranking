@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# リポジトリ名
+anime-manga-ranking
 
-Things you may want to cover:
+## アプリ名
+【投票制】アニメ・マンガランキング
 
-* Ruby version
+## 使い方
 
-* System dependencies
+1. ランキング一覧では投稿された作品をランキング形式で閲覧できます。
+2. ユーザーの新規登録＆ログインを行うことで、作品の追加・投票・コメント機能を利用することができます。
+3. 投票後は画面右下の「投票反映」を押下することで、投票結果がランキングに反映されます。
 
-* Configuration
 
-* Database creation
+## 環境
 
-* Database initialization
+* ruby 3.0.1
+* rails 6.1.4.1
+* yarn 1.22.15
+* node 14.15.3
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## 文責
 
-* Deployment instructions
+* 作成者：Daiki Jibiki
+* 作成期間：2021.9.30 ~ 2021.10.14
 
-* ...
+
+## 参考文献
+
+* 1週間アプリ制作まとめ（https://www.notion.so/1-6d8a65b415db40679695eb6d4c707162）
+
+
