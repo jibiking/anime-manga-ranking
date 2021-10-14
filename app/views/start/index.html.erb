@@ -6,8 +6,13 @@
       <p class="s_index s_p route_fff"><i class="fas fa-bookmark mr6 route_g"></i> お気に入りの作品を追加してランキングに投票しよう <i class="fas fa-bookmark mr6 route_g"></i></p>
 
       <div class="s_index">
+        <%= link_to boards_path, class: 's_a' do %>
+          <div class="btn btn-primary bc_rank">ランキング</div>
+        <% end %>
+      </div>
+      <div class="s_index">
         <%= link_to new_user_path, class: 's_a' do %>
-          <div class="btn btn-primary bc_red">ユーザー登録</div>
+          <div class="btn btn-primary bc_red">新規登録</div>
         <% end %>
         <%= link_to login_path do %>
           <div class="btn btn-primary bc_red2">ログイン</div>
